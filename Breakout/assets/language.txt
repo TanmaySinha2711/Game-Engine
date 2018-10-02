@@ -1,0 +1,6 @@
+Level :  
+Score :  
+Lives :  
+Nivel :  
+Puntuación :  
+Vive :  

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="breakout" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/breakout" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="lib" />
+					<Add directory="src" />
+					<Add directory="assets" />
+					<Add directory="D:/mingw_dev_lib/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_mixer" />
+					<Add option="-lSDL2_image -lSDL2_ttf" />
+					<Add directory="D:/mingw_dev_lib/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/breakout" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="assets" />
+					<Add directory="include" />
+					<Add directory="src" />
+					<Add directory="lib" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/CodeBlocks/SDL/include/SDL2" />
+			<Add directory="D:/NEU/sem2/Building Game Engines/Breakout/assets" />
+			<Add directory="D:/NEU/sem2/Building Game Engines/Breakout/include" />
+			<Add directory="D:/NEU/sem2/Building Game Engines/Breakout/lib" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lSDL2_mixer -lSDL2_ttf -lSDL2_image" />
+			<Add directory="D:/CodeBlocks/SDL/lib" />
+		</Linker>
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/breakout.h" />
+		<Unit filename="include/brick.h" />
+		<Unit filename="include/fps.h" />
+		<Unit filename="include/menu.h" />
+		<Unit filename="include/scene.h" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/breakout.cpp" />
+		<Unit filename="src/brick.cpp" />
+		<Unit filename="src/fps.cpp" />
+		<Unit filename="src/mainmenu.cpp" />
+		<Unit filename="src/scene.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
